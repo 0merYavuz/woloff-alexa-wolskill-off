@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="woloff.exe" version="1.0.0.0" publicKeyToken="113b563ca42b027e" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="woloff" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="woloff.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Bildirim Seçenekleri
+          Windows Kullanıcı Hesabı Denetimi düzeyini değiştirmek istiyorsanız,
+           requestedExecutionLevel düğümünü aşağıdakilerden biriyle değiştirin.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Geriye dönük uyumluluk için Dosya ve Kayıt Defteri Sanallaştırması
+         kullanmak istiyorsanız, requestedExecutionLevel düğümünü silin.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="woloff.exe" size="6616">
+      <assemblyIdentity name="woloff" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xgWzLlmOB0/aqTcNOUoYyk5gkm+OV4AvR2kIvecL/+Y=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="woloff.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-SPCL0H4\omer" issuerKeyHash="d95ab505a5959eaf3315f6a7e96079c391789d3e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>v3VKtubHFJnkrw8bjKPjVFgsWh2ssfXyz4a8IZVaVSg=</DigestValue></Reference></SignedInfo><SignatureValue>CWYAK1+4T1f+a+qPlcgUmz8JUyYWen21aGsH55/2bKQx0kUzorfXu0nbEzO22Ak2XfTfQs06l5UVOyY93ayzUc8d26UGgid6n9H3JpE6tQiUf3i7NuE3qYO/tWUxtCbcJYgc6KLP/4mg04DcsAk+gQhUwGp1r5TzW96psw4uhVs=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vG1qeS6OpeRrFxMpCaoygAYuqgOpBunC5/IKTgJGH6jktqGn69VH2UdlZ/gDKOxLMaUg5AyGnO2FpOiygu+Sh2cf+JmmXb3IO5u4pn7SBqe7Le1EK9vg57jbTmR0p/EgNfhSW+NnH3VrRRWA9dOROwX0Rzo33zl3qBAPhFd8guU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="28555a9521bc86cff2f5b1ac1d5a2c5854e3a38c1b0fafe49914c7e6b64a75bf" Description="" Url=""><as:assemblyIdentity name="woloff.exe" version="1.0.0.0" publicKeyToken="113b563ca42b027e" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-SPCL0H4\omer</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>GPeRn1C2P7BmFOgNQ/EAAG5GXrTElS37kFzLbB3nbwI=</DigestValue></Reference></SignedInfo><SignatureValue>eZVS6m50G+q5k43q5Mx1C+2uIU13OZ3Ib16xPbfg522CESzJXVlRxjbRqYhaIp7mYGL/BzBt4t1IaBLQ14x30G82kwfSITa25t9qxLtgZKuHuvL9EEg8jAv8JlG8UlT6qymEUWIUM5deD0hpg5FWpKyGsL+jnz3zMd00+9PttpA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vG1qeS6OpeRrFxMpCaoygAYuqgOpBunC5/IKTgJGH6jktqGn69VH2UdlZ/gDKOxLMaUg5AyGnO2FpOiygu+Sh2cf+JmmXb3IO5u4pn7SBqe7Le1EK9vg57jbTmR0p/EgNfhSW+NnH3VrRRWA9dOROwX0Rzo33zl3qBAPhFd8guU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQVBEESsKx5Z1L3J2amRkoZjANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtAFMAUABDAEwAMABIADQAXABvAG0AZQByMB4XDTIyMTIwMzE1NDcyMloXDTIzMTIwMzIxNDcyMlowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQBTAFAAQwBMADAASAA0AFwAbwBtAGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvG1qeS6OpeRrFxMpCaoygAYuqgOpBunC5/IKTgJGH6jktqGn69VH2UdlZ/gDKOxLMaUg5AyGnO2FpOiygu+Sh2cf+JmmXb3IO5u4pn7SBqe7Le1EK9vg57jbTmR0p/EgNfhSW+NnH3VrRRWA9dOROwX0Rzo33zl3qBAPhFd8guUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQC8TJnZ21ttucIElynHBnfKmmzohqtNVFNvSiYfDMPhbBfy7r14OBBBcROTOJywgK7eJK1212omfD8suk0Mmq615tlzMW7qZC42kf+60X619xbVS2hBJ4Fqw+wxngpZPuyYBNB+uzWyts83uqI8zbd8cxPT1nUNmT6GGRuGF/sWKg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

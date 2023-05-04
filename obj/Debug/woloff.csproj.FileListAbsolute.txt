@@ -1,0 +1,12 @@
+C:\Users\omer\Source\Repos\woloff\bin\Debug\woloff.exe.config
+C:\Users\omer\Source\Repos\woloff\bin\Debug\woloff.exe.manifest
+C:\Users\omer\Source\Repos\woloff\bin\Debug\woloff.application
+C:\Users\omer\Source\Repos\woloff\bin\Debug\woloff.exe
+C:\Users\omer\Source\Repos\woloff\bin\Debug\woloff.pdb
+C:\Users\omer\Source\Repos\woloff\obj\Debug\woloff.csproj.AssemblyReference.cache
+C:\Users\omer\Source\Repos\woloff\obj\Debug\woloff.csproj.SuggestedBindingRedirects.cache
+C:\Users\omer\Source\Repos\woloff\obj\Debug\woloff.csproj.CoreCompileInputs.cache
+C:\Users\omer\Source\Repos\woloff\obj\Debug\woloff.exe.manifest
+C:\Users\omer\Source\Repos\woloff\obj\Debug\woloff.application
+C:\Users\omer\Source\Repos\woloff\obj\Debug\woloff.exe
+C:\Users\omer\Source\Repos\woloff\obj\Debug\woloff.pdb
