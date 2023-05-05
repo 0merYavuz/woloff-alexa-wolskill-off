@@ -61,9 +61,28 @@ namespace woloff
 
         public static void Main()
         {
-            RegistryKey rk = Registry.CurrentUser.OpenSubKey
-            ("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-            rk.SetValue("woloff.exe", System.IO.Path.Combine(Environment.CurrentDirectory, "woloff.exe"));
+            string appName = "woloff"; // Uygulama adını burada belirtin
+            string appPath = System.Reflection.Assembly.GetExecutingAssembly().Location;
+
+            // Otomatik başlatılacak kayıt defteri anahtarının adını belirleyin
+            string runKeyName = "SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run";
+
+            // Kayıt defteri anahtarını açın
+            RegistryKey runKey = Registry.CurrentUser.OpenSubKey(runKeyName, true);
+
+            // Anahtar varsa kaldırın
+            if (runKey.GetValue(appName) != null)
+            {
+                runKey.DeleteValue(appName);
+                Console.WriteLine("Kayıt defteri girdisi kaldırıldı.");
+            }
+
+            // Anahtarı yeniden oluşturun ve uygulamayı otomatik olarak başlatın
+            runKey.SetValue(appName, appPath);
+            Console.WriteLine("Kayıt defteri girdisi oluşturuldu ve uygulama otomatik olarak başlatılacak.");
+
+            // Uygulama devam etmek için bekler
+            Console.ReadLine();
 
             StartListener();
 
